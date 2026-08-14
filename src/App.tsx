@@ -3,6 +3,7 @@ import { PokemonSearch } from './components/PokemonSearch';
 import { TypeGrid } from './components/TypeGrid';
 import { TypeBadge } from './components/TypeBadge';
 import { MatchupSection } from './components/MatchupSection';
+import { EvolutionNav } from './components/EvolutionNav';
 import { usePokemonSearch } from './hooks/usePokemonSearch';
 import { computeMatchups, categorizeMatchups, computeAttackMatchups, categorizeAttackMatchups } from './utils/matchups';
 import type { TypeEn, Pokemon } from './types';
@@ -32,7 +33,7 @@ function App() {
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
   const [selectedTypes, setSelectedTypes] = useState<TypeEn[]>([]);
 
-  const { query, setQuery, suggestions, exactMatch } = usePokemonSearch();
+  const { query, setQuery, suggestions, exactMatch, allPokemon } = usePokemonSearch();
 
   const effectivePokemon = useMemo(() => {
     return selectedPokemon || exactMatch;
@@ -107,7 +108,7 @@ function App() {
 
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <header className="text-center mb-8 animate-slide-up">
           <div className="flex justify-center mb-4">
             <PokeballLogo />
@@ -139,7 +140,7 @@ function App() {
               className={`
                 flex-1 py-2.5 px-4 text-sm font-bold rounded-xl transition-all duration-300
                 ${inputMode === 'pokemon'
-                  ? 'bg-red-600 text-white shadow-lg shadow-red-900/40'
+                  ? 'bg-blue-500 text-white shadow-lg shadow-blue-900/40'
                   : 'text-slate-400 hover:text-white hover:bg-white/5'}
               `}
             >
@@ -151,7 +152,7 @@ function App() {
               className={`
                 flex-1 py-2.5 px-4 text-sm font-bold rounded-xl transition-all duration-300
                 ${inputMode === 'manual'
-                  ? 'bg-red-600 text-white shadow-lg shadow-red-900/40'
+                  ? 'bg-green-500 text-white shadow-lg shadow-green-900/40'
                   : 'text-slate-400 hover:text-white hover:bg-white/5'}
               `}
             >
@@ -169,28 +170,32 @@ function App() {
                   onSelect={handleSelectPokemon}
                 />
                 {effectivePokemon && (
-                  <div className="text-center bg-gradient-to-br from-slate-800/80 to-slate-900/80 rounded-2xl p-5 border border-white/10 shadow-inner animate-slide-up">
-                    <div className="flex flex-col items-center gap-3">
-                      <div className="w-28 h-28 rounded-2xl bg-slate-700/50 flex items-center justify-center overflow-hidden border border-white/10 shadow-lg">
+                  <EvolutionNav
+                    pokemon={effectivePokemon}
+                    pokedex={allPokemon}
+                    onSelect={handleSelectPokemon}
+                  >
+                    <div className="text-center bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-5 border-2 border-white/40 shadow-[0_0_40px_rgba(255,255,255,0.12),inset_0_0_30px_rgba(255,255,255,0.03)] animate-slide-up">
+                      <div className="flex flex-col items-center gap-3">
                         {effectivePokemon.sprite ? (
                           <img
                             src={effectivePokemon.sprite}
                             alt={effectivePokemon.name}
-                            className="w-full h-full object-contain"
+                            className="w-28 h-28 object-contain drop-shadow-lg"
                           />
                         ) : (
                           <span className="text-4xl">❓</span>
                         )}
-                      </div>
-                      <h2 className="text-2xl font-black text-white tracking-tight">{effectivePokemon.name}</h2>
-                      <div className="flex items-center justify-center gap-3 flex-wrap">
-                        <TypeBadge type={effectivePokemon.type1} size="lg" />
-                        {effectivePokemon.type2 && (
-                          <TypeBadge type={effectivePokemon.type2} size="lg" />
-                        )}
+                        <h2 className="text-2xl font-black text-white tracking-tight">{effectivePokemon.name}</h2>
+                        <div className="flex items-center justify-center gap-3 flex-wrap">
+                          <TypeBadge type={effectivePokemon.type1} size="lg" />
+                          {effectivePokemon.type2 && (
+                            <TypeBadge type={effectivePokemon.type2} size="lg" />
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </EvolutionNav>
                 )}
               </div>
             ) : (

@@ -46,3 +46,13 @@ export interface CategorizedAttackMatchups {
   veryWeak: AttackResult[];     // ×0.25
   noEffect: AttackResult[];     // ×0
 }
+
+export interface EvolutionData {
+  previous: string[];
+  next: string[];
+}
+
+export interface EvolutionLink {
+  pokemon: Pokemon;
+  direction: 'previous' | 'next' | 'variant';
+}

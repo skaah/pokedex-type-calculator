@@ -130,18 +130,16 @@ export function PokemonSearch({ query, setQuery, suggestions, onSelect }: Pokemo
               `}
             >
               <div className="flex items-center gap-3 min-w-0">
-                <div className="w-10 h-10 flex-shrink-0 rounded-xl bg-slate-700/50 flex items-center justify-center overflow-hidden">
                   {pokemon.sprite ? (
                     <img
                       src={pokemon.sprite}
                       alt=""
-                      className="w-full h-full object-contain"
+                      className="w-10 h-10 object-contain flex-shrink-0"
                       loading="lazy"
                     />
                   ) : (
-                    <span className="text-lg">❓</span>
+                    <span className="w-10 h-10 flex items-center justify-center text-lg flex-shrink-0">❓</span>
                   )}
-                </div>
                 <span className="font-medium text-slate-100 truncate">{pokemon.name}</span>
               </div>
               <div className="flex gap-1.5 flex-shrink-0">

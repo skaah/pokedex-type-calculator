@@ -177,8 +177,13 @@ export function MatchupSection({ mode, data }: MatchupSectionProps) {
     );
   }
 
+  const modeBorder =
+    mode === 'defense'
+      ? 'border-blue-500/40 shadow-[0_0_40px_rgba(59,130,246,0.15)]'
+      : 'border-red-500/40 shadow-[0_0_40px_rgba(220,38,38,0.15)]';
+
   return (
-    <div className="space-y-4 stagger-children">
+    <div className={`rounded-2xl border-2 ${modeBorder} bg-slate-800/40 p-4 space-y-4 stagger-children`}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Gauche - fort */}
         <div className="space-y-3">

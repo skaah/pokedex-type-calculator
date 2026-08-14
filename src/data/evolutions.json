@@ -1,0 +1,2615 @@
+{
+  "Bulbizarre": {
+    "previous": [],
+    "next": [
+      "Herbizarre"
+    ]
+  },
+  "Herbizarre": {
+    "previous": [
+      "Bulbizarre"
+    ],
+    "next": [
+      "Florizarre"
+    ]
+  },
+  "Florizarre": {
+    "previous": [
+      "Herbizarre"
+    ],
+    "next": []
+  },
+  "Salamèche": {
+    "previous": [],
+    "next": [
+      "Reptincel"
+    ]
+  },
+  "Reptincel": {
+    "previous": [
+      "Salamèche"
+    ],
+    "next": [
+      "Dracaufeu"
+    ]
+  },
+  "Dracaufeu": {
+    "previous": [
+      "Reptincel"
+    ],
+    "next": []
+  },
+  "Carapuce": {
+    "previous": [],
+    "next": [
+      "Carabaffe"
+    ]
+  },
+  "Carabaffe": {
+    "previous": [
+      "Carapuce"
+    ],
+    "next": [
+      "Tortank"
+    ]
+  },
+  "Tortank": {
+    "previous": [
+      "Carabaffe"
+    ],
+    "next": []
+  },
+  "Chenipan": {
+    "previous": [],
+    "next": [
+      "Chrysacier"
+    ]
+  },
+  "Chrysacier": {
+    "previous": [
+      "Chenipan"
+    ],
+    "next": [
+      "Papilusion"
+    ]
+  },
+  "Papilusion": {
+    "previous": [
+      "Chrysacier"
+    ],
+    "next": []
+  },
+  "Aspicot": {
+    "previous": [],
+    "next": [
+      "Coconfort"
+    ]
+  },
+  "Coconfort": {
+    "previous": [
+      "Aspicot"
+    ],
+    "next": [
+      "Dardargnan"
+    ]
+  },
+  "Dardargnan": {
+    "previous": [
+      "Coconfort"
+    ],
+    "next": []
+  },
+  "Roucool": {
+    "previous": [],
+    "next": [
+      "Roucoups"
+    ]
+  },
+  "Roucoups": {
+    "previous": [
+      "Roucool"
+    ],
+    "next": [
+      "Roucarnage"
+    ]
+  },
+  "Roucarnage": {
+    "previous": [
+      "Roucoups"
+    ],
+    "next": []
+  },
+  "Rattata": {
+    "previous": [],
+    "next": [
+      "Rattatac"
+    ]
+  },
+  "Rattatac": {
+    "previous": [
+      "Rattata"
+    ],
+    "next": []
+  },
+  "Piafabec": {
+    "previous": [],
+    "next": [
+      "Rapasdepic"
+    ]
+  },
+  "Rapasdepic": {
+    "previous": [
+      "Piafabec"
+    ],
+    "next": []
+  },
+  "Abo": {
+    "previous": [],
+    "next": [
+      "Arbok"
+    ]
+  },
+  "Arbok": {
+    "previous": [
+      "Abo"
+    ],
+    "next": []
+  },
+  "Pikachu": {
+    "previous": [
+      "Pichu"
+    ],
+    "next": [
+      "Raichu"
+    ]
+  },
+  "Raichu": {
+    "previous": [
+      "Pikachu"
+    ],
+    "next": []
+  },
+  "Sabelette": {
+    "previous": [],
+    "next": [
+      "Sablaireau"
+    ]
+  },
+  "Sablaireau": {
+    "previous": [
+      "Sabelette"
+    ],
+    "next": []
+  },
+  "Nidoran♀": {
+    "previous": [],
+    "next": [
+      "Nidorina"
+    ]
+  },
+  "Nidorina": {
+    "previous": [
+      "Nidoran♀"
+    ],
+    "next": [
+      "Nidoqueen"
+    ]
+  },
+  "Nidoqueen": {
+    "previous": [
+      "Nidorina"
+    ],
+    "next": []
+  },
+  "Nidoran♂": {
+    "previous": [],
+    "next": [
+      "Nidorino"
+    ]
+  },
+  "Nidorino": {
+    "previous": [
+      "Nidoran♂"
+    ],
+    "next": [
+      "Nidoking"
+    ]
+  },
+  "Nidoking": {
+    "previous": [
+      "Nidorino"
+    ],
+    "next": []
+  },
+  "Mélofée": {
+    "previous": [
+      "Mélo"
+    ],
+    "next": [
+      "Mélodelfe"
+    ]
+  },
+  "Mélodelfe": {
+    "previous": [
+      "Mélofée"
+    ],
+    "next": []
+  },
+  "Goupix": {
+    "previous": [],
+    "next": [
+      "Feunard"
+    ]
+  },
+  "Feunard": {
+    "previous": [
+      "Goupix"
+    ],
+    "next": []
+  },
+  "Rondoudou": {
+    "previous": [
+      "Toudoudou"
+    ],
+    "next": [
+      "Grodoudou"
+    ]
+  },
+  "Grodoudou": {
+    "previous": [
+      "Rondoudou"
+    ],
+    "next": []
+  },
+  "Nosferapti": {
+    "previous": [],
+    "next": [
+      "Nosferalto"
+    ]
+  },
+  "Nosferalto": {
+    "previous": [
+      "Nosferapti"
+    ],
+    "next": [
+      "Nostenfer"
+    ]
+  },
+  "Mystherbe": {
+    "previous": [],
+    "next": [
+      "Ortide"
+    ]
+  },
+  "Ortide": {
+    "previous": [
+      "Mystherbe"
+    ],
+    "next": [
+      "Joliflor"
+    ]
+  },
+  "Paras": {
+    "previous": [],
+    "next": [
+      "Parasect"
+    ]
+  },
+  "Parasect": {
+    "previous": [
+      "Paras"
+    ],
+    "next": []
+  },
+  "Mimitoss": {
+    "previous": [],
+    "next": [
+      "Aéromite"
+    ]
+  },
+  "Aéromite": {
+    "previous": [
+      "Mimitoss"
+    ],
+    "next": []
+  },
+  "Taupiqueur": {
+    "previous": [],
+    "next": [
+      "Triopikeur"
+    ]
+  },
+  "Triopikeur": {
+    "previous": [
+      "Taupiqueur"
+    ],
+    "next": []
+  },
+  "Miaouss": {
+    "previous": [],
+    "next": [
+      "Persian"
+    ]
+  },
+  "Persian": {
+    "previous": [
+      "Miaouss"
+    ],
+    "next": []
+  },
+  "Psykokwak": {
+    "previous": [],
+    "next": [
+      "Akwakwak"
+    ]
+  },
+  "Akwakwak": {
+    "previous": [
+      "Psykokwak"
+    ],
+    "next": []
+  },
+  "Férosinge": {
+    "previous": [],
+    "next": [
+      "Colossinge"
+    ]
+  },
+  "Colossinge": {
+    "previous": [
+      "Férosinge"
+    ],
+    "next": []
+  },
+  "Caninos": {
+    "previous": [],
+    "next": [
+      "Arcanin"
+    ]
+  },
+  "Arcanin": {
+    "previous": [
+      "Caninos"
+    ],
+    "next": []
+  },
+  "Ptitard": {
+    "previous": [],
+    "next": [
+      "Têtarte"
+    ]
+  },
+  "Têtarte": {
+    "previous": [
+      "Ptitard"
+    ],
+    "next": [
+      "Tartard",
+      "Tarpaud"
+    ]
+  },
+  "Tartard": {
+    "previous": [
+      "Têtarte"
+    ],
+    "next": []
+  },
+  "Abra": {
+    "previous": [],
+    "next": [
+      "Kadabra"
+    ]
+  },
+  "Kadabra": {
+    "previous": [
+      "Abra"
+    ],
+    "next": [
+      "Alakazam"
+    ]
+  },
+  "Alakazam": {
+    "previous": [
+      "Kadabra"
+    ],
+    "next": []
+  },
+  "Machoc": {
+    "previous": [],
+    "next": [
+      "Machopeur"
+    ]
+  },
+  "Machopeur": {
+    "previous": [
+      "Machoc"
+    ],
+    "next": [
+      "Mackogneur"
+    ]
+  },
+  "Mackogneur": {
+    "previous": [
+      "Machopeur"
+    ],
+    "next": []
+  },
+  "Chétiflor": {
+    "previous": [],
+    "next": [
+      "Boustiflor"
+    ]
+  },
+  "Boustiflor": {
+    "previous": [
+      "Chétiflor"
+    ],
+    "next": [
+      "Empiflor"
+    ]
+  },
+  "Empiflor": {
+    "previous": [
+      "Boustiflor"
+    ],
+    "next": []
+  },
+  "Tentacool": {
+    "previous": [],
+    "next": [
+      "Tentacruel"
+    ]
+  },
+  "Tentacruel": {
+    "previous": [
+      "Tentacool"
+    ],
+    "next": []
+  },
+  "Racaillou": {
+    "previous": [],
+    "next": [
+      "Gravalanch"
+    ]
+  },
+  "Gravalanch": {
+    "previous": [
+      "Racaillou"
+    ],
+    "next": [
+      "Grolem"
+    ]
+  },
+  "Grolem": {
+    "previous": [
+      "Gravalanch"
+    ],
+    "next": []
+  },
+  "Ponyta": {
+    "previous": [],
+    "next": [
+      "Galopa"
+    ]
+  },
+  "Galopa": {
+    "previous": [
+      "Ponyta"
+    ],
+    "next": []
+  },
+  "Ramoloss": {
+    "previous": [],
+    "next": [
+      "Flagadoss",
+      "Roigada"
+    ]
+  },
+  "Flagadoss": {
+    "previous": [
+      "Ramoloss"
+    ],
+    "next": []
+  },
+  "Magnéti": {
+    "previous": [],
+    "next": [
+      "Magnéton"
+    ]
+  },
+  "Magnéton": {
+    "previous": [
+      "Magnéti"
+    ],
+    "next": []
+  },
+  "Canarticho": {
+    "previous": [],
+    "next": []
+  },
+  "Doduo": {
+    "previous": [],
+    "next": [
+      "Dodrio"
+    ]
+  },
+  "Dodrio": {
+    "previous": [
+      "Doduo"
+    ],
+    "next": []
+  },
+  "Otaria": {
+    "previous": [],
+    "next": [
+      "Lamantine"
+    ]
+  },
+  "Lamantine": {
+    "previous": [
+      "Otaria"
+    ],
+    "next": []
+  },
+  "Tadmorv": {
+    "previous": [],
+    "next": [
+      "Grotadmorv"
+    ]
+  },
+  "Grotadmorv": {
+    "previous": [
+      "Tadmorv"
+    ],
+    "next": []
+  },
+  "Kokiyas": {
+    "previous": [],
+    "next": [
+      "Crustabri"
+    ]
+  },
+  "Crustabri": {
+    "previous": [
+      "Kokiyas"
+    ],
+    "next": []
+  },
+  "Fantominus": {
+    "previous": [],
+    "next": [
+      "Spectrum"
+    ]
+  },
+  "Spectrum": {
+    "previous": [
+      "Fantominus"
+    ],
+    "next": [
+      "Ectoplasma"
+    ]
+  },
+  "Ectoplasma": {
+    "previous": [
+      "Spectrum"
+    ],
+    "next": []
+  },
+  "Onix": {
+    "previous": [],
+    "next": [
+      "Steelix"
+    ]
+  },
+  "Soporifik": {
+    "previous": [],
+    "next": [
+      "Hypnomade"
+    ]
+  },
+  "Hypnomade": {
+    "previous": [
+      "Soporifik"
+    ],
+    "next": []
+  },
+  "Krabby": {
+    "previous": [],
+    "next": [
+      "Krabboss"
+    ]
+  },
+  "Krabboss": {
+    "previous": [
+      "Krabby"
+    ],
+    "next": []
+  },
+  "Voltorbe": {
+    "previous": [],
+    "next": [
+      "Électrode"
+    ]
+  },
+  "Électrode": {
+    "previous": [
+      "Voltorbe"
+    ],
+    "next": []
+  },
+  "Noadkoko": {
+    "previous": [],
+    "next": []
+  },
+  "Osselait": {
+    "previous": [],
+    "next": [
+      "Ossatueur"
+    ]
+  },
+  "Ossatueur": {
+    "previous": [
+      "Osselait"
+    ],
+    "next": []
+  },
+  "Kicklee": {
+    "previous": [
+      "Debugant"
+    ],
+    "next": []
+  },
+  "Tygnon": {
+    "previous": [
+      "Debugant"
+    ],
+    "next": []
+  },
+  "Excelangue": {
+    "previous": [],
+    "next": [
+      "Coudlangue"
+    ]
+  },
+  "Smogo": {
+    "previous": [],
+    "next": [
+      "Smogogo"
+    ]
+  },
+  "Smogogo": {
+    "previous": [
+      "Smogo"
+    ],
+    "next": []
+  },
+  "Rhinocorne": {
+    "previous": [],
+    "next": [
+      "Rhinoféros"
+    ]
+  },
+  "Rhinoféros": {
+    "previous": [
+      "Rhinocorne"
+    ],
+    "next": [
+      "Rhinastoc"
+    ]
+  },
+  "Leveinard": {
+    "previous": [
+      "Ptiravi"
+    ],
+    "next": [
+      "Leuphorie"
+    ]
+  },
+  "Saquedeneu": {
+    "previous": [],
+    "next": [
+      "Bouldeneu"
+    ]
+  },
+  "Kangourex": {
+    "previous": [],
+    "next": []
+  },
+  "Hypotrempe": {
+    "previous": [],
+    "next": [
+      "Hypocéan"
+    ]
+  },
+  "Hypocéan": {
+    "previous": [
+      "Hypotrempe"
+    ],
+    "next": [
+      "Hyporoi"
+    ]
+  },
+  "Poissirène": {
+    "previous": [],
+    "next": [
+      "Poissoroy"
+    ]
+  },
+  "Poissoroy": {
+    "previous": [
+      "Poissirène"
+    ],
+    "next": []
+  },
+  "Stari": {
+    "previous": [],
+    "next": [
+      "Staross"
+    ]
+  },
+  "Staross": {
+    "previous": [
+      "Stari"
+    ],
+    "next": []
+  },
+  "M. Mime": {
+    "previous": [],
+    "next": []
+  },
+  "Insécateur": {
+    "previous": [],
+    "next": [
+      "Cizayox"
+    ]
+  },
+  "Lippoutou": {
+    "previous": [
+      "Lippouti"
+    ],
+    "next": []
+  },
+  "Élektek": {
+    "previous": [
+      "Élekid"
+    ],
+    "next": []
+  },
+  "Magmar": {
+    "previous": [
+      "Magby"
+    ],
+    "next": [
+      "Maganon"
+    ]
+  },
+  "Scarabrute": {
+    "previous": [],
+    "next": []
+  },
+  "Tauros": {
+    "previous": [],
+    "next": []
+  },
+  "Magicarpe": {
+    "previous": [],
+    "next": [
+      "Léviator"
+    ]
+  },
+  "Léviator": {
+    "previous": [
+      "Magicarpe"
+    ],
+    "next": []
+  },
+  "Lokhlass": {
+    "previous": [],
+    "next": []
+  },
+  "Métamorph": {
+    "previous": [],
+    "next": []
+  },
+  "Évoli": {
+    "previous": [],
+    "next": [
+      "Aquali",
+      "Voltali",
+      "Pyroli",
+      "Mentali",
+      "Noctali",
+      "Phyllali",
+      "Givrali"
+    ]
+  },
+  "Aquali": {
+    "previous": [
+      "Évoli"
+    ],
+    "next": []
+  },
+  "Voltali": {
+    "previous": [
+      "Évoli"
+    ],
+    "next": []
+  },
+  "Pyroli": {
+    "previous": [
+      "Évoli"
+    ],
+    "next": []
+  },
+  "Porygon": {
+    "previous": [],
+    "next": [
+      "Porygon2"
+    ]
+  },
+  "Amonita": {
+    "previous": [],
+    "next": [
+      "Amonistar"
+    ]
+  },
+  "Amonistar": {
+    "previous": [
+      "Amonita"
+    ],
+    "next": []
+  },
+  "Kabuto": {
+    "previous": [],
+    "next": [
+      "Kabutops"
+    ]
+  },
+  "Kabutops": {
+    "previous": [
+      "Kabuto"
+    ],
+    "next": []
+  },
+  "Ptéra": {
+    "previous": [],
+    "next": []
+  },
+  "Ronflex": {
+    "previous": [
+      "Goinfrex"
+    ],
+    "next": []
+  },
+  "Artikodin": {
+    "previous": [],
+    "next": []
+  },
+  "Électhor": {
+    "previous": [],
+    "next": []
+  },
+  "Sulfura": {
+    "previous": [],
+    "next": []
+  },
+  "Minidraco": {
+    "previous": [],
+    "next": [
+      "Draco"
+    ]
+  },
+  "Draco": {
+    "previous": [
+      "Minidraco"
+    ],
+    "next": [
+      "Dracolosse"
+    ]
+  },
+  "Dracolosse": {
+    "previous": [
+      "Draco"
+    ],
+    "next": []
+  },
+  "Mewtwo": {
+    "previous": [],
+    "next": []
+  },
+  "Mew": {
+    "previous": [],
+    "next": []
+  },
+  "Germignon": {
+    "previous": [],
+    "next": [
+      "Macronium"
+    ]
+  },
+  "Macronium": {
+    "previous": [
+      "Germignon"
+    ],
+    "next": [
+      "Méganium"
+    ]
+  },
+  "Méganium": {
+    "previous": [
+      "Macronium"
+    ],
+    "next": []
+  },
+  "Héricendre": {
+    "previous": [],
+    "next": [
+      "Feurisson"
+    ]
+  },
+  "Feurisson": {
+    "previous": [
+      "Héricendre"
+    ],
+    "next": [
+      "Typhlosion"
+    ]
+  },
+  "Typhlosion": {
+    "previous": [
+      "Feurisson"
+    ],
+    "next": []
+  },
+  "Kaiminus": {
+    "previous": [],
+    "next": [
+      "Crocrodil"
+    ]
+  },
+  "Crocrodil": {
+    "previous": [
+      "Kaiminus"
+    ],
+    "next": [
+      "Aligatueur"
+    ]
+  },
+  "Aligatueur": {
+    "previous": [
+      "Crocrodil"
+    ],
+    "next": []
+  },
+  "Fouinette": {
+    "previous": [],
+    "next": [
+      "Fouinar"
+    ]
+  },
+  "Fouinar": {
+    "previous": [
+      "Fouinette"
+    ],
+    "next": []
+  },
+  "Hoothoot": {
+    "previous": [],
+    "next": [
+      "Noarfang"
+    ]
+  },
+  "Noarfang": {
+    "previous": [
+      "Hoothoot"
+    ],
+    "next": []
+  },
+  "Coxy": {
+    "previous": [],
+    "next": [
+      "Coxyclaque"
+    ]
+  },
+  "Coxyclaque": {
+    "previous": [
+      "Coxy"
+    ],
+    "next": []
+  },
+  "Mimigal": {
+    "previous": [],
+    "next": [
+      "Migalos"
+    ]
+  },
+  "Migalos": {
+    "previous": [
+      "Mimigal"
+    ],
+    "next": []
+  },
+  "Nostenfer": {
+    "previous": [
+      "Nosferalto"
+    ],
+    "next": []
+  },
+  "Loupio": {
+    "previous": [],
+    "next": [
+      "Lanturn"
+    ]
+  },
+  "Lanturn": {
+    "previous": [
+      "Loupio"
+    ],
+    "next": []
+  },
+  "Pichu": {
+    "previous": [],
+    "next": [
+      "Pikachu"
+    ]
+  },
+  "Mélo": {
+    "previous": [],
+    "next": [
+      "Mélofée"
+    ]
+  },
+  "Toudoudou": {
+    "previous": [],
+    "next": [
+      "Rondoudou"
+    ]
+  },
+  "Togepi": {
+    "previous": [],
+    "next": [
+      "Togetic"
+    ]
+  },
+  "Togetic": {
+    "previous": [
+      "Togepi"
+    ],
+    "next": [
+      "Togekiss"
+    ]
+  },
+  "Natu": {
+    "previous": [],
+    "next": [
+      "Xatu"
+    ]
+  },
+  "Xatu": {
+    "previous": [
+      "Natu"
+    ],
+    "next": []
+  },
+  "Wattouat": {
+    "previous": [],
+    "next": [
+      "Lainergie"
+    ]
+  },
+  "Lainergie": {
+    "previous": [
+      "Wattouat"
+    ],
+    "next": [
+      "Pharamp"
+    ]
+  },
+  "Pharamp": {
+    "previous": [
+      "Lainergie"
+    ],
+    "next": []
+  },
+  "Joliflor": {
+    "previous": [
+      "Ortide"
+    ],
+    "next": []
+  },
+  "Marill": {
+    "previous": [
+      "Azurill"
+    ],
+    "next": [
+      "Azumarill"
+    ]
+  },
+  "Azumarill": {
+    "previous": [
+      "Marill"
+    ],
+    "next": []
+  },
+  "Simularbre": {
+    "previous": [],
+    "next": []
+  },
+  "Tarpaud": {
+    "previous": [
+      "Têtarte"
+    ],
+    "next": []
+  },
+  "Granivol": {
+    "previous": [],
+    "next": [
+      "Floravol"
+    ]
+  },
+  "Floravol": {
+    "previous": [
+      "Granivol"
+    ],
+    "next": [
+      "Cotovol"
+    ]
+  },
+  "Cotovol": {
+    "previous": [
+      "Floravol"
+    ],
+    "next": []
+  },
+  "Capumain": {
+    "previous": [],
+    "next": []
+  },
+  "Tournegrin": {
+    "previous": [],
+    "next": [
+      "Héliatronc"
+    ]
+  },
+  "Héliatronc": {
+    "previous": [
+      "Tournegrin"
+    ],
+    "next": []
+  },
+  "Yanma": {
+    "previous": [],
+    "next": []
+  },
+  "Axoloto": {
+    "previous": [],
+    "next": [
+      "Maraiste"
+    ]
+  },
+  "Maraiste": {
+    "previous": [
+      "Axoloto"
+    ],
+    "next": []
+  },
+  "Mentali": {
+    "previous": [
+      "Évoli"
+    ],
+    "next": []
+  },
+  "Noctali": {
+    "previous": [
+      "Évoli"
+    ],
+    "next": []
+  },
+  "Cornèbre": {
+    "previous": [],
+    "next": [
+      "Corboss"
+    ]
+  },
+  "Roigada": {
+    "previous": [
+      "Ramoloss"
+    ],
+    "next": []
+  },
+  "Feuforêve": {
+    "previous": [],
+    "next": []
+  },
+  "Zarbi": {
+    "previous": [],
+    "next": []
+  },
+  "Qulbutoké": {
+    "previous": [
+      "Okéoké"
+    ],
+    "next": []
+  },
+  "Girafarig": {
+    "previous": [],
+    "next": []
+  },
+  "Pomdepik": {
+    "previous": [],
+    "next": [
+      "Foretress"
+    ]
+  },
+  "Foretress": {
+    "previous": [
+      "Pomdepik"
+    ],
+    "next": []
+  },
+  "Insolourdo": {
+    "previous": [],
+    "next": []
+  },
+  "Scorplane": {
+    "previous": [],
+    "next": [
+      "Scorvol"
+    ]
+  },
+  "Steelix": {
+    "previous": [
+      "Onix"
+    ],
+    "next": []
+  },
+  "Snubbull": {
+    "previous": [],
+    "next": [
+      "Granbull"
+    ]
+  },
+  "Granbull": {
+    "previous": [
+      "Snubbull"
+    ],
+    "next": []
+  },
+  "Qwilfish": {
+    "previous": [],
+    "next": []
+  },
+  "Cizayox": {
+    "previous": [
+      "Insécateur"
+    ],
+    "next": []
+  },
+  "Caratroc": {
+    "previous": [],
+    "next": []
+  },
+  "Scarhino": {
+    "previous": [],
+    "next": []
+  },
+  "Farfuret": {
+    "previous": [],
+    "next": [
+      "Dimoret"
+    ]
+  },
+  "Teddiursa": {
+    "previous": [],
+    "next": [
+      "Ursaring"
+    ]
+  },
+  "Ursaring": {
+    "previous": [
+      "Teddiursa"
+    ],
+    "next": []
+  },
+  "Limagma": {
+    "previous": [],
+    "next": [
+      "Volcaropod"
+    ]
+  },
+  "Volcaropod": {
+    "previous": [
+      "Limagma"
+    ],
+    "next": []
+  },
+  "Marcacrin": {
+    "previous": [],
+    "next": [
+      "Cochignon"
+    ]
+  },
+  "Cochignon": {
+    "previous": [
+      "Marcacrin"
+    ],
+    "next": []
+  },
+  "Corayon": {
+    "previous": [],
+    "next": []
+  },
+  "Rémoraid": {
+    "previous": [],
+    "next": [
+      "Octillery"
+    ]
+  },
+  "Octillery": {
+    "previous": [
+      "Rémoraid"
+    ],
+    "next": []
+  },
+  "Cadoizo": {
+    "previous": [],
+    "next": []
+  },
+  "Démanta": {
+    "previous": [
+      "Babimanta"
+    ],
+    "next": []
+  },
+  "Airmure": {
+    "previous": [],
+    "next": []
+  },
+  "Malosse": {
+    "previous": [],
+    "next": [
+      "Démolosse"
+    ]
+  },
+  "Démolosse": {
+    "previous": [
+      "Malosse"
+    ],
+    "next": []
+  },
+  "Hyporoi": {
+    "previous": [
+      "Hypocéan"
+    ],
+    "next": []
+  },
+  "Phanpy": {
+    "previous": [],
+    "next": [
+      "Donphan"
+    ]
+  },
+  "Donphan": {
+    "previous": [
+      "Phanpy"
+    ],
+    "next": []
+  },
+  "Porygon2": {
+    "previous": [
+      "Porygon"
+    ],
+    "next": []
+  },
+  "Cerfrousse": {
+    "previous": [],
+    "next": []
+  },
+  "Queulorior": {
+    "previous": [],
+    "next": []
+  },
+  "Debugant": {
+    "previous": [],
+    "next": [
+      "Kicklee",
+      "Tygnon",
+      "Kapoera"
+    ]
+  },
+  "Kapoera": {
+    "previous": [
+      "Debugant"
+    ],
+    "next": []
+  },
+  "Lippouti": {
+    "previous": [],
+    "next": [
+      "Lippoutou"
+    ]
+  },
+  "Élekid": {
+    "previous": [],
+    "next": [
+      "Élektek"
+    ]
+  },
+  "Magby": {
+    "previous": [],
+    "next": [
+      "Magmar"
+    ]
+  },
+  "Écrémeuh": {
+    "previous": [],
+    "next": []
+  },
+  "Leuphorie": {
+    "previous": [
+      "Leveinard"
+    ],
+    "next": []
+  },
+  "Raikou": {
+    "previous": [],
+    "next": []
+  },
+  "Entei": {
+    "previous": [],
+    "next": []
+  },
+  "Suicune": {
+    "previous": [],
+    "next": []
+  },
+  "Embrylex": {
+    "previous": [],
+    "next": [
+      "Ymphect"
+    ]
+  },
+  "Ymphect": {
+    "previous": [
+      "Embrylex"
+    ],
+    "next": [
+      "Tyranocif"
+    ]
+  },
+  "Tyranocif": {
+    "previous": [
+      "Ymphect"
+    ],
+    "next": []
+  },
+  "Lugia": {
+    "previous": [],
+    "next": []
+  },
+  "Ho-Oh": {
+    "previous": [],
+    "next": []
+  },
+  "Celebi": {
+    "previous": [],
+    "next": []
+  },
+  "Arcko": {
+    "previous": [],
+    "next": [
+      "Massko"
+    ]
+  },
+  "Massko": {
+    "previous": [
+      "Arcko"
+    ],
+    "next": [
+      "Jungko"
+    ]
+  },
+  "Jungko": {
+    "previous": [
+      "Massko"
+    ],
+    "next": []
+  },
+  "Poussifeu": {
+    "previous": [],
+    "next": [
+      "Galifeu"
+    ]
+  },
+  "Galifeu": {
+    "previous": [
+      "Poussifeu"
+    ],
+    "next": [
+      "Braségali"
+    ]
+  },
+  "Braségali": {
+    "previous": [
+      "Galifeu"
+    ],
+    "next": []
+  },
+  "Gobou": {
+    "previous": [],
+    "next": [
+      "Flobio"
+    ]
+  },
+  "Flobio": {
+    "previous": [
+      "Gobou"
+    ],
+    "next": [
+      "Laggron"
+    ]
+  },
+  "Laggron": {
+    "previous": [
+      "Flobio"
+    ],
+    "next": []
+  },
+  "Medhyèna": {
+    "previous": [],
+    "next": [
+      "Grahyèna"
+    ]
+  },
+  "Grahyèna": {
+    "previous": [
+      "Medhyèna"
+    ],
+    "next": []
+  },
+  "Zigzaton": {
+    "previous": [],
+    "next": [
+      "Linéon"
+    ]
+  },
+  "Linéon": {
+    "previous": [
+      "Zigzaton"
+    ],
+    "next": []
+  },
+  "Chenipotte": {
+    "previous": [],
+    "next": [
+      "Armulys",
+      "Blindalys"
+    ]
+  },
+  "Armulys": {
+    "previous": [
+      "Chenipotte"
+    ],
+    "next": [
+      "Charmillon"
+    ]
+  },
+  "Charmillon": {
+    "previous": [
+      "Armulys"
+    ],
+    "next": []
+  },
+  "Blindalys": {
+    "previous": [
+      "Chenipotte"
+    ],
+    "next": [
+      "Papinox"
+    ]
+  },
+  "Papinox": {
+    "previous": [
+      "Blindalys"
+    ],
+    "next": []
+  },
+  "Nénupiot": {
+    "previous": [],
+    "next": [
+      "Lombre"
+    ]
+  },
+  "Lombre": {
+    "previous": [
+      "Nénupiot"
+    ],
+    "next": [
+      "Ludicolo"
+    ]
+  },
+  "Ludicolo": {
+    "previous": [
+      "Lombre"
+    ],
+    "next": []
+  },
+  "Grainipiot": {
+    "previous": [],
+    "next": [
+      "Pifeuil"
+    ]
+  },
+  "Pifeuil": {
+    "previous": [
+      "Grainipiot"
+    ],
+    "next": [
+      "Tengalice"
+    ]
+  },
+  "Tengalice": {
+    "previous": [
+      "Pifeuil"
+    ],
+    "next": []
+  },
+  "Nirondelle": {
+    "previous": [],
+    "next": [
+      "Hélédelle"
+    ]
+  },
+  "Hélédelle": {
+    "previous": [
+      "Nirondelle"
+    ],
+    "next": []
+  },
+  "Goélise": {
+    "previous": [],
+    "next": [
+      "Bekipan"
+    ]
+  },
+  "Bekipan": {
+    "previous": [
+      "Goélise"
+    ],
+    "next": []
+  },
+  "Tarsal": {
+    "previous": [],
+    "next": [
+      "Kirlia"
+    ]
+  },
+  "Kirlia": {
+    "previous": [
+      "Tarsal"
+    ],
+    "next": [
+      "Gardevoir",
+      "Gallame"
+    ]
+  },
+  "Gardevoir": {
+    "previous": [
+      "Kirlia"
+    ],
+    "next": []
+  },
+  "Arakdo": {
+    "previous": [],
+    "next": [
+      "Maskadra"
+    ]
+  },
+  "Maskadra": {
+    "previous": [
+      "Arakdo"
+    ],
+    "next": []
+  },
+  "Balignon": {
+    "previous": [],
+    "next": [
+      "Chapignon"
+    ]
+  },
+  "Chapignon": {
+    "previous": [
+      "Balignon"
+    ],
+    "next": []
+  },
+  "Vigoroth": {
+    "previous": [],
+    "next": [
+      "Monaflèmit"
+    ]
+  },
+  "Monaflèmit": {
+    "previous": [
+      "Vigoroth"
+    ],
+    "next": []
+  },
+  "Ningale": {
+    "previous": [],
+    "next": [
+      "Ninjask",
+      "Munja"
+    ]
+  },
+  "Ninjask": {
+    "previous": [
+      "Ningale"
+    ],
+    "next": []
+  },
+  "Munja": {
+    "previous": [
+      "Ningale"
+    ],
+    "next": []
+  },
+  "Chuchmur": {
+    "previous": [],
+    "next": [
+      "Ramboum"
+    ]
+  },
+  "Ramboum": {
+    "previous": [
+      "Chuchmur"
+    ],
+    "next": [
+      "Brouhabam"
+    ]
+  },
+  "Brouhabam": {
+    "previous": [
+      "Ramboum"
+    ],
+    "next": []
+  },
+  "Makuhita": {
+    "previous": [],
+    "next": [
+      "Hariyama"
+    ]
+  },
+  "Hariyama": {
+    "previous": [
+      "Makuhita"
+    ],
+    "next": []
+  },
+  "Azurill": {
+    "previous": [],
+    "next": [
+      "Marill"
+    ]
+  },
+  "Tarinor": {
+    "previous": [],
+    "next": [
+      "Tarinorme"
+    ]
+  },
+  "Skitty": {
+    "previous": [],
+    "next": [
+      "Delcatty"
+    ]
+  },
+  "Delcatty": {
+    "previous": [
+      "Skitty"
+    ],
+    "next": []
+  },
+  "Ténéfix": {
+    "previous": [],
+    "next": []
+  },
+  "Mysdibule": {
+    "previous": [],
+    "next": []
+  },
+  "Galekid": {
+    "previous": [],
+    "next": [
+      "Galegon"
+    ]
+  },
+  "Galegon": {
+    "previous": [
+      "Galekid"
+    ],
+    "next": [
+      "Galeking"
+    ]
+  },
+  "Galeking": {
+    "previous": [
+      "Galegon"
+    ],
+    "next": []
+  },
+  "Méditikka": {
+    "previous": [],
+    "next": [
+      "Charmina"
+    ]
+  },
+  "Charmina": {
+    "previous": [
+      "Méditikka"
+    ],
+    "next": []
+  },
+  "Dynavolt": {
+    "previous": [],
+    "next": [
+      "Élecsprint"
+    ]
+  },
+  "Élecsprint": {
+    "previous": [
+      "Dynavolt"
+    ],
+    "next": []
+  },
+  "Posipi": {
+    "previous": [],
+    "next": []
+  },
+  "Négapi": {
+    "previous": [],
+    "next": []
+  },
+  "Muciole": {
+    "previous": [],
+    "next": []
+  },
+  "Lumivole": {
+    "previous": [],
+    "next": []
+  },
+  "Rosélia": {
+    "previous": [
+      "Rozbouton"
+    ],
+    "next": [
+      "Roserade"
+    ]
+  },
+  "Gloupti": {
+    "previous": [],
+    "next": [
+      "Avaltout"
+    ]
+  },
+  "Avaltout": {
+    "previous": [
+      "Gloupti"
+    ],
+    "next": []
+  },
+  "Carvanha": {
+    "previous": [],
+    "next": [
+      "Sharpedo"
+    ]
+  },
+  "Sharpedo": {
+    "previous": [
+      "Carvanha"
+    ],
+    "next": []
+  },
+  "Wailmer": {
+    "previous": [],
+    "next": [
+      "Wailord"
+    ]
+  },
+  "Wailord": {
+    "previous": [
+      "Wailmer"
+    ],
+    "next": []
+  },
+  "Chamallot": {
+    "previous": [],
+    "next": [
+      "Camérupt"
+    ]
+  },
+  "Camérupt": {
+    "previous": [
+      "Chamallot"
+    ],
+    "next": []
+  },
+  "Chartor": {
+    "previous": [],
+    "next": []
+  },
+  "Spoink": {
+    "previous": [],
+    "next": [
+      "Groret"
+    ]
+  },
+  "Groret": {
+    "previous": [
+      "Spoink"
+    ],
+    "next": []
+  },
+  "Spinda": {
+    "previous": [],
+    "next": []
+  },
+  "Kraknoix": {
+    "previous": [],
+    "next": [
+      "Vibraninf"
+    ]
+  },
+  "Vibraninf": {
+    "previous": [
+      "Kraknoix"
+    ],
+    "next": [
+      "Libégon"
+    ]
+  },
+  "Libégon": {
+    "previous": [
+      "Vibraninf"
+    ],
+    "next": []
+  },
+  "Cacnea": {
+    "previous": [],
+    "next": [
+      "Cacturne"
+    ]
+  },
+  "Cacturne": {
+    "previous": [
+      "Cacnea"
+    ],
+    "next": []
+  },
+  "Tylton": {
+    "previous": [],
+    "next": [
+      "Altaria"
+    ]
+  },
+  "Altaria": {
+    "previous": [
+      "Tylton"
+    ],
+    "next": []
+  },
+  "Mangriff": {
+    "previous": [],
+    "next": []
+  },
+  "Séviper": {
+    "previous": [],
+    "next": []
+  },
+  "Séléroc": {
+    "previous": [],
+    "next": []
+  },
+  "Solaroc": {
+    "previous": [],
+    "next": []
+  },
+  "Barloche": {
+    "previous": [],
+    "next": [
+      "Barbicha"
+    ]
+  },
+  "Barbicha": {
+    "previous": [
+      "Barloche"
+    ],
+    "next": []
+  },
+  "Écrapince": {
+    "previous": [],
+    "next": [
+      "Colhomard"
+    ]
+  },
+  "Colhomard": {
+    "previous": [
+      "Écrapince"
+    ],
+    "next": []
+  },
+  "Balbuto": {
+    "previous": [],
+    "next": [
+      "Kaorine"
+    ]
+  },
+  "Kaorine": {
+    "previous": [
+      "Balbuto"
+    ],
+    "next": []
+  },
+  "Lilia": {
+    "previous": [],
+    "next": [
+      "Vacilys"
+    ]
+  },
+  "Vacilys": {
+    "previous": [
+      "Lilia"
+    ],
+    "next": []
+  },
+  "Anorith": {
+    "previous": [],
+    "next": [
+      "Armaldo"
+    ]
+  },
+  "Armaldo": {
+    "previous": [
+      "Anorith"
+    ],
+    "next": []
+  },
+  "Barpau": {
+    "previous": [],
+    "next": [
+      "Milobellus"
+    ]
+  },
+  "Milobellus": {
+    "previous": [
+      "Barpau"
+    ],
+    "next": []
+  },
+  "Morphéo": {
+    "previous": [],
+    "next": []
+  },
+  "Kecleon": {
+    "previous": [],
+    "next": []
+  },
+  "Polichombr": {
+    "previous": [],
+    "next": [
+      "Branette"
+    ]
+  },
+  "Branette": {
+    "previous": [
+      "Polichombr"
+    ],
+    "next": []
+  },
+  "Skelénox": {
+    "previous": [],
+    "next": [
+      "Téraclope"
+    ]
+  },
+  "Téraclope": {
+    "previous": [
+      "Skelénox"
+    ],
+    "next": [
+      "Noctunoir"
+    ]
+  },
+  "Tropius": {
+    "previous": [],
+    "next": []
+  },
+  "Éoko": {
+    "previous": [],
+    "next": []
+  },
+  "Absol": {
+    "previous": [],
+    "next": []
+  },
+  "Okéoké": {
+    "previous": [],
+    "next": [
+      "Qulbutoké"
+    ]
+  },
+  "Stalgamin": {
+    "previous": [],
+    "next": [
+      "Oniglali",
+      "Momartik"
+    ]
+  },
+  "Oniglali": {
+    "previous": [
+      "Stalgamin"
+    ],
+    "next": []
+  },
+  "Obalie": {
+    "previous": [],
+    "next": [
+      "Phogleur"
+    ]
+  },
+  "Phogleur": {
+    "previous": [
+      "Obalie"
+    ],
+    "next": [
+      "Kaimorse"
+    ]
+  },
+  "Kaimorse": {
+    "previous": [
+      "Phogleur"
+    ],
+    "next": []
+  },
+  "Coquiperl": {
+    "previous": [],
+    "next": [
+      "Serpang",
+      "Rosabyss"
+    ]
+  },
+  "Serpang": {
+    "previous": [
+      "Coquiperl"
+    ],
+    "next": []
+  },
+  "Rosabyss": {
+    "previous": [
+      "Coquiperl"
+    ],
+    "next": []
+  },
+  "Relicanth": {
+    "previous": [],
+    "next": []
+  },
+  "Lovdisc": {
+    "previous": [],
+    "next": []
+  },
+  "Draby": {
+    "previous": [],
+    "next": [
+      "Drackhaus"
+    ]
+  },
+  "Drackhaus": {
+    "previous": [
+      "Draby"
+    ],
+    "next": [
+      "Drattak"
+    ]
+  },
+  "Drattak": {
+    "previous": [
+      "Drackhaus"
+    ],
+    "next": []
+  },
+  "Terhal": {
+    "previous": [],
+    "next": [
+      "Métang"
+    ]
+  },
+  "Métang": {
+    "previous": [
+      "Terhal"
+    ],
+    "next": [
+      "Métalosse"
+    ]
+  },
+  "Métalosse": {
+    "previous": [
+      "Métang"
+    ],
+    "next": []
+  },
+  "Regirock": {
+    "previous": [],
+    "next": []
+  },
+  "Regice": {
+    "previous": [],
+    "next": []
+  },
+  "Registeel": {
+    "previous": [],
+    "next": []
+  },
+  "Latias": {
+    "previous": [],
+    "next": []
+  },
+  "Latios": {
+    "previous": [],
+    "next": []
+  },
+  "Kyogre": {
+    "previous": [],
+    "next": []
+  },
+  "Groudon": {
+    "previous": [],
+    "next": []
+  },
+  "Rayquaza": {
+    "previous": [],
+    "next": []
+  },
+  "Jirachi": {
+    "previous": [],
+    "next": []
+  },
+  "Deoxys": {
+    "previous": [],
+    "next": []
+  },
+  "Rozbouton": {
+    "previous": [],
+    "next": [
+      "Rosélia"
+    ]
+  },
+  "Roserade": {
+    "previous": [
+      "Rosélia"
+    ],
+    "next": []
+  },
+  "Laporeille": {
+    "previous": [],
+    "next": [
+      "Lockpin"
+    ]
+  },
+  "Lockpin": {
+    "previous": [
+      "Laporeille"
+    ],
+    "next": []
+  },
+  "Corboss": {
+    "previous": [
+      "Cornèbre"
+    ],
+    "next": []
+  },
+  "Ptiravi": {
+    "previous": [],
+    "next": [
+      "Leveinard"
+    ]
+  },
+  "Griknot": {
+    "previous": [],
+    "next": []
+  },
+  "Carchacrok": {
+    "previous": [],
+    "next": []
+  },
+  "Goinfrex": {
+    "previous": [],
+    "next": [
+      "Ronflex"
+    ]
+  },
+  "Riolu": {
+    "previous": [],
+    "next": [
+      "Lucario"
+    ]
+  },
+  "Lucario": {
+    "previous": [
+      "Riolu"
+    ],
+    "next": []
+  },
+  "Babimanta": {
+    "previous": [],
+    "next": [
+      "Démanta"
+    ]
+  },
+  "Blizzi": {
+    "previous": [],
+    "next": [
+      "Blizzaroi"
+    ]
+  },
+  "Blizzaroi": {
+    "previous": [
+      "Blizzi"
+    ],
+    "next": []
+  },
+  "Dimoret": {
+    "previous": [
+      "Farfuret"
+    ],
+    "next": []
+  },
+  "Coudlangue": {
+    "previous": [
+      "Excelangue"
+    ],
+    "next": []
+  },
+  "Rhinastoc": {
+    "previous": [
+      "Rhinoféros"
+    ],
+    "next": []
+  },
+  "Bouldeneu": {
+    "previous": [
+      "Saquedeneu"
+    ],
+    "next": []
+  },
+  "Maganon": {
+    "previous": [
+      "Magmar"
+    ],
+    "next": []
+  },
+  "Togekiss": {
+    "previous": [
+      "Togetic"
+    ],
+    "next": []
+  },
+  "Phyllali": {
+    "previous": [
+      "Évoli"
+    ],
+    "next": []
+  },
+  "Givrali": {
+    "previous": [
+      "Évoli"
+    ],
+    "next": []
+  },
+  "Scorvol": {
+    "previous": [
+      "Scorplane"
+    ],
+    "next": []
+  },
+  "Gallame": {
+    "previous": [
+      "Kirlia"
+    ],
+    "next": []
+  },
+  "Tarinorme": {
+    "previous": [
+      "Tarinor"
+    ],
+    "next": []
+  },
+  "Noctunoir": {
+    "previous": [
+      "Téraclope"
+    ],
+    "next": []
+  },
+  "Momartik": {
+    "previous": [
+      "Stalgamin"
+    ],
+    "next": []
+  },
+  "Gruikui": {
+    "previous": [],
+    "next": [
+      "Grotichon"
+    ]
+  },
+  "Grotichon": {
+    "previous": [
+      "Gruikui"
+    ],
+    "next": [
+      "Roitiflam"
+    ]
+  },
+  "Roitiflam": {
+    "previous": [
+      "Grotichon"
+    ],
+    "next": []
+  },
+  "Rototaupe": {
+    "previous": [],
+    "next": [
+      "Minotaupe"
+    ]
+  },
+  "Minotaupe": {
+    "previous": [
+      "Rototaupe"
+    ],
+    "next": []
+  },
+  "Anchwatt": {
+    "previous": [],
+    "next": [
+      "Lampéroie"
+    ]
+  },
+  "Lampéroie": {
+    "previous": [
+      "Anchwatt"
+    ],
+    "next": [
+      "Ohmassacre"
+    ]
+  },
+  "Ohmassacre": {
+    "previous": [
+      "Lampéroie"
+    ],
+    "next": []
+  },
+  "Marisson": {
+    "previous": [],
+    "next": []
+  },
+  "Blindépique": {
+    "previous": [],
+    "next": []
+  },
+  "Roussil": {
+    "previous": [],
+    "next": [
+      "Goupelin"
+    ]
+  },
+  "Goupelin": {
+    "previous": [
+      "Roussil"
+    ],
+    "next": []
+  },
+  "Grenousse": {
+    "previous": [],
+    "next": [
+      "Croâporal"
+    ]
+  },
+  "Croâporal": {
+    "previous": [
+      "Grenousse"
+    ],
+    "next": [
+      "Amphinobi"
+    ]
+  },
+  "Amphinobi": {
+    "previous": [
+      "Croâporal"
+    ],
+    "next": []
+  },
+  "Hélionceau": {
+    "previous": [],
+    "next": [
+      "Némélios"
+    ]
+  },
+  "Némélios": {
+    "previous": [
+      "Hélionceau"
+    ],
+    "next": []
+  },
+  "Sovkipou": {
+    "previous": [],
+    "next": []
+  },
+  "Mimiqui": {
+    "previous": [],
+    "next": []
+  },
+  "Rafflésia": {
+    "previous": [],
+    "next": []
+  },
+  "Nœunœuf": {
+    "previous": [],
+    "next": []
+  },
+  "Parécool": {
+    "previous": [],
+    "next": []
+  },
+  "Carmarche": {
+    "previous": [],
+    "next": []
+  },
+  "Mamochon": {
+    "previous": [],
+    "next": []
+  },
+  "Elekable": {
+    "previous": [],
+    "next": []
+  },
+  "Magnezone": {
+    "previous": [],
+    "next": []
+  },
+  "Magireve": {
+    "previous": [],
+    "next": []
+  },
+  "Boguérise": {
+    "previous": [],
+    "next": []
+  },
+  "Feunec": {
+    "previous": [],
+    "next": []
+  },
+  "Etourmi": {
+    "previous": [],
+    "next": []
+  },
+  "Etourvol": {
+    "previous": [],
+    "next": []
+  },
+  "Etouraptor": {
+    "previous": [],
+    "next": []
+  },
+  "Bagguiguane": {
+    "previous": [],
+    "next": []
+  },
+  "Baggaid": {
+    "previous": [],
+    "next": []
+  },
+  "Sarmurai": {
+    "previous": [],
+    "next": []
+  }
+}
