@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "en": "NORMAL",
+    "fr": "Normal",
+    "color": "#84888D"
+  },
+  {
+    "id": 2,
+    "en": "FIRE",
+    "fr": "Feu",
+    "color": "#C0885A"
+  },
+  {
+    "id": 3,
+    "en": "WATER",
+    "fr": "Eau",
+    "color": "#5888AE"
+  },
+  {
+    "id": 4,
+    "en": "ELECTRIC",
+    "fr": "Electrik",
+    "color": "#C8AE29"
+  },
+  {
+    "id": 5,
+    "en": "GRASS",
+    "fr": "Plante",
+    "color": "#5FA068"
+  },
+  {
+    "id": 6,
+    "en": "ICE",
+    "fr": "Glace",
+    "color": "#62A89F"
+  },
+  {
+    "id": 7,
+    "en": "FIGHTING",
+    "fr": "Combat",
+    "color": "#B15D78"
+  },
+  {
+    "id": 8,
+    "en": "POISON",
+    "fr": "Poison",
+    "color": "#9A74A6"
+  },
+  {
+    "id": 9,
+    "en": "GROUND",
+    "fr": "Sol",
+    "color": "#B27455"
+  },
+  {
+    "id": 10,
+    "en": "FLYING",
+    "fr": "Vol",
+    "color": "#8394B1"
+  },
+  {
+    "id": 11,
+    "en": "PSYCHIC",
+    "fr": "Psy",
+    "color": "#C06B73"
+  },
+  {
+    "id": 12,
+    "en": "BUG",
+    "fr": "Insecte",
+    "color": "#7FA03D"
+  },
+  {
+    "id": 13,
+    "en": "ROCK",
+    "fr": "Roche",
+    "color": "#AFA58D"
+  },
+  {
+    "id": 14,
+    "en": "GHOST",
+    "fr": "Spectre",
+    "color": "#7D8AA9"
+  },
+  {
+    "id": 15,
+    "en": "DRAGON",
+    "fr": "Dragon",
+    "color": "#3F76A4"
+  },
+  {
+    "id": 16,
+    "en": "DARK",
+    "fr": "Ténèbres",
+    "color": "#75717B"
+  },
+  {
+    "id": 17,
+    "en": "STEEL",
+    "fr": "Acier",
+    "color": "#738E99"
+  },
+  {
+    "id": 18,
+    "en": "FAIRY",
+    "fr": "Fée",
+    "color": "#C989C0"
+  }
+]

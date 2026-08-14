@@ -1,0 +1,48 @@
+export type TypeEn =
+  | 'NORMAL' | 'FIRE' | 'WATER' | 'ELECTRIC' | 'GRASS' | 'ICE'
+  | 'FIGHTING' | 'POISON' | 'GROUND' | 'FLYING' | 'PSYCHIC' | 'BUG'
+  | 'ROCK' | 'GHOST' | 'DRAGON' | 'DARK' | 'STEEL' | 'FAIRY';
+
+export interface PokemonType {
+  id: number;
+  en: TypeEn;
+  fr: string;
+  color: string;
+}
+
+export interface Pokemon {
+  name: string;
+  type1: TypeEn;
+  type2: TypeEn | null;
+  sprite: string | null;
+}
+
+export interface MatchupResult {
+  attacker: TypeEn;
+  attackerFr: string;
+  multiplier: number;
+}
+
+export interface CategorizedMatchups {
+  weakness4: MatchupResult[];
+  weakness2: MatchupResult[];
+  neutral: MatchupResult[];
+  resistHalf: MatchupResult[];
+  resistQuarter: MatchupResult[];
+  immune: MatchupResult[];
+}
+
+export interface AttackResult {
+  defender: TypeEn;
+  defenderFr: string;
+  multiplier: number;
+}
+
+export interface CategorizedAttackMatchups {
+  veryStrong: AttackResult[]; // ×4
+  strong: AttackResult[];      // ×2
+  neutral: AttackResult[];      // ×1
+  weak: AttackResult[];         // ×0.5
+  veryWeak: AttackResult[];     // ×0.25
+  noEffect: AttackResult[];     // ×0
+}
