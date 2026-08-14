@@ -106,3 +106,27 @@ body::before {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(100, 116, 139, 1);
 }
+
+/* Floating Pokémon sprites background animation */
+@keyframes float-sprite {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.8);
+  }
+  12% {
+    opacity: 0.55;
+    transform: translateY(-6px) scale(1);
+  }
+  88% {
+    opacity: 0.55;
+    transform: translateY(-14px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-22px) scale(0.9);
+  }
+}
+
+.animate-float-sprite {
+  animation: float-sprite var(--duration, 5s) ease-in-out forwards;
+}

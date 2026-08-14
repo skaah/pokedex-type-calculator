@@ -1,9 +1,10 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { PokemonSearch } from './components/PokemonSearch';
 import { TypeGrid } from './components/TypeGrid';
 import { TypeBadge } from './components/TypeBadge';
 import { MatchupSection } from './components/MatchupSection';
 import { EvolutionNav } from './components/EvolutionNav';
+import { FloatingSprites } from './components/FloatingSprites';
 import { usePokemonSearch } from './hooks/usePokemonSearch';
 import { computeMatchups, categorizeMatchups, computeAttackMatchups, categorizeAttackMatchups } from './utils/matchups';
 import type { TypeEn, Pokemon } from './types';
@@ -32,6 +33,7 @@ function App() {
   const [resultMode, setResultMode] = useState<ResultMode>('defense');
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
   const [selectedTypes, setSelectedTypes] = useState<TypeEn[]>([]);
+  const mainRef = useRef<HTMLElement>(null);
 
   const { query, setQuery, suggestions, exactMatch, allPokemon } = usePokemonSearch();
 
@@ -107,8 +109,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen py-8 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="relative min-h-screen py-8 px-4 sm:px-6">
+      <FloatingSprites pokedex={allPokemon} mainRef={mainRef} />
+      <div className="max-w-4xl mx-auto relative z-10">
         <header className="text-center mb-8 animate-slide-up">
           <div className="flex justify-center mb-4">
             <PokeballLogo />
@@ -121,7 +124,7 @@ function App() {
           </p>
         </header>
 
-        <main className="bg-slate-900/60 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/10 animate-slide-up" style={{ animationDelay: '100ms' }}>
+        <main ref={mainRef} className="bg-slate-900/60 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/10 animate-slide-up" style={{ animationDelay: '100ms' }}>
           {/* Pokedex top bar */}
           <div className="bg-gradient-to-r from-red-600 via-red-500 to-red-600 px-5 py-4 border-b border-white/10 rounded-t-3xl flex items-center gap-3">
             <div className="w-3 h-3 rounded-full bg-blue-400 animate-pulse shadow-[0_0_12px_rgba(96,165,250,0.8)]" />
