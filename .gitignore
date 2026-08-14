@@ -31,3 +31,10 @@ lerna-debug.log*
 
 # Misc
 *.log
+
+# Secrets / recovery keys
+clef recup vercel.txt
+*.key
+*.env
+.env.*
+!.env.example
