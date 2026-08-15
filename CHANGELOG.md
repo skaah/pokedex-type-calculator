@@ -5,6 +5,18 @@ Toutes les modifications notables de ce projet seront documentées ici.
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.2.2] - 2026-08-15
+
+### Ajouté
+- Section "Journal des mises à jour" affichant le contenu de `CHANGELOG.md` directement sur le site.
+- Bouton fixe en bas de page ouvrant le changelog dans un panneau bottom-sheet qui s'expand vers le haut.
+- Backdrop sombre permettant de fermer le changelog en cliquant à l'extérieur du panneau.
+
+### Modifié
+- Le changelog n'est plus affiché en permanence ; il est désormais accessible via le bouton dédié.
+- Amélioration de la visibilité du dropdown de suggestions Pokémon (meilleure opacité, z-index plus élevé, ombre renforcée).
+- Sens des flèches du bottom-sheet ajusté pour refléter logiquement l'expansion vers le haut et le collapse vers le bas.
+
 ## [1.2.1] - 2026-08-15
 
 ### Corrigé
