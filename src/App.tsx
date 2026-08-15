@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { PokemonSearch } from './components/PokemonSearch';
 import { TypeGrid } from './components/TypeGrid';
 import { TypeBadge } from './components/TypeBadge';
@@ -289,6 +290,7 @@ function App() {
       )}
 
       <Changelog />
+      <Analytics />
     </div>
   );
 }

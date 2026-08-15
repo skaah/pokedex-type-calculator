@@ -5,6 +5,11 @@ Toutes les modifications notables de ce projet seront documentées ici.
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.3.1] - 2026-08-15
+
+### Ajouté
+- Intégration de **Vercel Analytics** (`@vercel/analytics`) pour suivre les visites et les pages vues.
+
 ## [1.3.0] - 2026-08-15
 
 ### Ajouté
