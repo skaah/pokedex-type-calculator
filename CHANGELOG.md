@@ -5,6 +5,23 @@ Toutes les modifications notables de ce projet seront documentées ici.
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.3.0] - 2026-08-15
+
+### Ajouté
+- Bouton "Info" sur la carte du Pokémon sélectionné, ouvrant une fenêtre popup scrollable fermable par une croix en haut à droite.
+- Affichage dans la popup des informations détaillées d'un Pokémon :
+  - **Évolution** : niveau d'évolution, objet spécial ou autre condition (données [Poképedia](https://www.pokepedia.fr/) / [PokeAPI](https://pokeapi.co/)).
+  - **Capacités** : capacités apprises par niveau, CT/Capsules et Tuteur, complétées par les attaques ajoutées par les développeurs depuis le fichier Excel.
+  - **Objets tenus** : objets que le Pokémon peut porter en sauvage (colonne D du fichier Excel).
+  - **Localisation** : zones de rencontre et méthode d'acquisition (surf, pêche, etc.) depuis `public/Localisation Pokémon .md`.
+- Script `scripts/build-pokemon-info.mjs` pour générer `src/data/pokemon-info.json` à partir de PokeAPI, du fichier Excel et du Markdown de localisation.
+
+### Corrigé
+- Correction d'un bug où la section Évolution affichait "Ce Pokémon n'évolue pas" pour des Pokémon possédant pourtant une évolution (problème de casse dans le cache de mapping français PokeAPI).
+
+### Modifié
+- Suppression des catégories "CT / Capsules" et "Tuteur" dans la popup d'informations ; seules les capacités par niveau, les capacités par Oeuf et les attaques ajoutées par les développeurs sont affichées.
+
 ## [1.2.2] - 2026-08-15
 
 ### Ajouté

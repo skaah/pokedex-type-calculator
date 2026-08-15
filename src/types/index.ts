@@ -56,3 +56,46 @@ export interface EvolutionLink {
   pokemon: Pokemon;
   direction: 'previous' | 'next' | 'variant';
 }
+
+export interface PokemonLevelMove {
+  name: string;
+  en: string;
+  level: number | null;
+}
+
+export interface PokemonSimpleMove {
+  name: string;
+}
+
+export interface EvolutionStep {
+  name: string;
+  method: string;
+  condition: string | null;
+}
+
+export interface PokemonLocation {
+  zone: string;
+  method: string;
+  note: string | null;
+}
+
+export interface PokemonMoves {
+  level_up: PokemonLevelMove[];
+  egg: PokemonSimpleMove[];
+}
+
+export interface PokemonEvolution {
+  from: string | null;
+  to: EvolutionStep[];
+}
+
+export interface PokemonInfo {
+  evolution: PokemonEvolution;
+  moves: PokemonMoves;
+  heldItems: string[];
+  addedMoves: string[];
+  locations: PokemonLocation[];
+}
+
+export type PokemonInfoMap = Record<string, PokemonInfo>;
+

@@ -6,6 +6,8 @@ import { MatchupSection } from './components/MatchupSection';
 import { EvolutionNav } from './components/EvolutionNav';
 import { FloatingSprites } from './components/FloatingSprites';
 import { Changelog } from './components/Changelog';
+import { PokemonInfoButton } from './components/PokemonInfoButton';
+import { PokemonInfoModal } from './components/PokemonInfoModal';
 import { usePokemonSearch } from './hooks/usePokemonSearch';
 import { computeMatchups, categorizeMatchups, computeAttackMatchups, categorizeAttackMatchups } from './utils/matchups';
 import type { TypeEn, Pokemon } from './types';
@@ -34,6 +36,7 @@ function App() {
   const [resultMode, setResultMode] = useState<ResultMode>('defense');
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
   const [selectedTypes, setSelectedTypes] = useState<TypeEn[]>([]);
+  const [infoPokemon, setInfoPokemon] = useState<Pokemon | null>(null);
   const mainRef = useRef<HTMLElement>(null);
 
   const { query, setQuery, suggestions, exactMatch, allPokemon } = usePokemonSearch();
@@ -179,7 +182,10 @@ function App() {
                     pokedex={allPokemon}
                     onSelect={handleSelectPokemon}
                   >
-                    <div className="text-center bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-5 border-2 border-white/40 shadow-[0_0_40px_rgba(255,255,255,0.12),inset_0_0_30px_rgba(255,255,255,0.03)] animate-slide-up">
+                    <div className="relative text-center bg-gradient-to-br from-slate-800/90 to-slate-900/90 rounded-2xl p-5 border-2 border-white/40 shadow-[0_0_40px_rgba(255,255,255,0.12),inset_0_0_30px_rgba(255,255,255,0.03)] animate-slide-up">
+                      <div className="absolute top-3 right-3">
+                        <PokemonInfoButton onClick={() => setInfoPokemon(effectivePokemon)} />
+                      </div>
                       <div className="flex flex-col items-center gap-3">
                         {effectivePokemon.sprite ? (
                           <img
@@ -274,6 +280,13 @@ function App() {
           </div>
         </main>
       </div>
+
+      {infoPokemon && (
+        <PokemonInfoModal
+          pokemon={infoPokemon}
+          onClose={() => setInfoPokemon(null)}
+        />
+      )}
 
       <Changelog />
     </div>
