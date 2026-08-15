@@ -273,9 +273,9 @@ function App() {
             )}
           </div>
         </main>
-
-        <Changelog />
       </div>
+
+      <Changelog />
     </div>
   );
 }
