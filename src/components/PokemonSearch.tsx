@@ -117,7 +117,7 @@ export function PokemonSearch({ query, setQuery, suggestions, onSelect }: Pokemo
         <ul
           ref={listRef}
           id="pokemon-suggestions"
-          className="absolute z-50 mt-3 w-full max-h-80 overflow-y-auto rounded-2xl bg-slate-800 border border-white/10 shadow-2xl animate-slide-up"
+          className="absolute z-[100] mt-3 w-full max-h-80 overflow-y-auto rounded-2xl bg-slate-950/95 backdrop-blur-xl border border-white/20 shadow-[0_0_60px_rgba(0,0,0,0.6)] animate-slide-up"
         >
           {suggestions.map((pokemon, index) => (
             <li
