@@ -5,6 +5,17 @@ Toutes les modifications notables de ce projet seront documentées ici.
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.2.1] - 2026-08-15
+
+### Corrigé
+- Correction de 59 sprites incorrects dans `src/data/pokedex.json` en recroisant les noms français avec les IDs officiels de [Poképedia](https://www.pokepedia.fr/) / [PokeAPI](https://pokeapi.co/).
+- Correction de 5 fautes d'orthographe dans les noms Pokémon :
+  - `Carmarche` → `Carmache` (#444)
+  - `Mamochon` → `Mammochon` (#473)
+  - `Boguérise` → `Boguérisse` (#651)
+  - `Feunec` → `Feunnec` (#653)
+  - `Bagguiguane` → `Baggiguane` (#559)
+
 ## [1.2.0] - 2024-08-14
 
 ### Ajouté
