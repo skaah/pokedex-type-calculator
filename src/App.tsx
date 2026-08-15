@@ -5,6 +5,7 @@ import { TypeBadge } from './components/TypeBadge';
 import { MatchupSection } from './components/MatchupSection';
 import { EvolutionNav } from './components/EvolutionNav';
 import { FloatingSprites } from './components/FloatingSprites';
+import { Changelog } from './components/Changelog';
 import { usePokemonSearch } from './hooks/usePokemonSearch';
 import { computeMatchups, categorizeMatchups, computeAttackMatchups, categorizeAttackMatchups } from './utils/matchups';
 import type { TypeEn, Pokemon } from './types';
@@ -273,6 +274,7 @@ function App() {
           </div>
         </main>
 
+        <Changelog />
       </div>
     </div>
   );
