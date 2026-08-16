@@ -10,6 +10,9 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 ### Modifié
 - Le champ de recherche est désormais vidé automatiquement après la sélection d'un Pokémon, permettant de lancer une nouvelle recherche sans action manuelle.
 
+### Corrigé
+- Correction du vidage effectif du champ de recherche dans `PokemonSearch.tsx` (l'état local écrasait précédemment la valeur avec le nom du Pokémon sélectionné).
+
 ## [1.3.1] - 2026-08-15
 
 ### Ajouté

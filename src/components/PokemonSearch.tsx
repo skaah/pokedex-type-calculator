@@ -49,7 +49,7 @@ export function PokemonSearch({ query, setQuery, suggestions, onSelect }: Pokemo
 
   const handleSelect = (pokemon: Pokemon) => {
     onSelect(pokemon);
-    setQuery(pokemon.name);
+    setQuery('');
     setIsOpen(false);
     if (blurTimeoutRef.current) clearTimeout(blurTimeoutRef.current);
   };
