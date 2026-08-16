@@ -92,6 +92,7 @@ function App() {
 
   const handleSelectPokemon = (pokemon: Pokemon) => {
     setSelectedPokemon(pokemon);
+    setQuery('');
   };
 
   const handleToggleType = (type: TypeEn) => {
