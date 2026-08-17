@@ -5,6 +5,16 @@ Toutes les modifications notables de ce projet seront documentées ici.
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.4.0] - 2026-08-16
+
+### Ajouté
+- Nouvel onglet **« Ligue Pokémon »** pour préparer les combats de la Ligue.
+- Deux listes indépendantes : **Mon équipe** et **Équipe adverse**, alimentées via le champ de recherche existant.
+- Bouton **Matchup** qui calcule, pour chaque Pokémon adverse, le meilleur Pokémon de mon équipe et le type offensif efficace avec le multiplicateur associé (×2, ×4, etc.).
+- Tableau des adversaires affichant pour chacun : sprite, types, faiblesses principales (×4 et ×2) et meilleur choix de mon équipe.
+- Suppression individuelle et vidage complet des deux listes.
+- Nouveaux composants `LeagueTool` et `LeagueRow`.
+
 ## [1.3.2] - 2026-08-16
 
 ### Modifié

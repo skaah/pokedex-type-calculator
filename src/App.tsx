@@ -9,11 +9,12 @@ import { FloatingSprites } from './components/FloatingSprites';
 import { Changelog } from './components/Changelog';
 import { PokemonInfoButton } from './components/PokemonInfoButton';
 import { PokemonInfoModal } from './components/PokemonInfoModal';
+import { LeagueTool } from './components/LeagueTool';
 import { usePokemonSearch } from './hooks/usePokemonSearch';
 import { computeMatchups, categorizeMatchups, computeAttackMatchups, categorizeAttackMatchups } from './utils/matchups';
 import type { TypeEn, Pokemon } from './types';
 
-type InputMode = 'pokemon' | 'manual';
+type InputMode = 'pokemon' | 'manual' | 'league';
 type ResultMode = 'defense' | 'attack';
 
 function PokeballLogo() {
@@ -38,6 +39,8 @@ function App() {
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
   const [selectedTypes, setSelectedTypes] = useState<TypeEn[]>([]);
   const [infoPokemon, setInfoPokemon] = useState<Pokemon | null>(null);
+  const [leagueTeam, setLeagueTeam] = useState<Pokemon[]>([]);
+  const [myTeam, setMyTeam] = useState<Pokemon[]>([]);
   const mainRef = useRef<HTMLElement>(null);
 
   const { query, setQuery, suggestions, exactMatch, allPokemon } = usePokemonSearch();
@@ -114,6 +117,36 @@ function App() {
     setSelectedTypes([]);
   };
 
+  const addLeaguePokemon = (pokemon: Pokemon) => {
+    setLeagueTeam(prev => {
+      if (prev.some(p => p.name === pokemon.name)) return prev;
+      return [...prev, pokemon];
+    });
+  };
+
+  const removeLeaguePokemon = (index: number) => {
+    setLeagueTeam(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const clearLeagueTeam = () => {
+    setLeagueTeam([]);
+  };
+
+  const addMyTeamPokemon = (pokemon: Pokemon) => {
+    setMyTeam(prev => {
+      if (prev.some(p => p.name === pokemon.name)) return prev;
+      return [...prev, pokemon];
+    });
+  };
+
+  const removeMyTeamPokemon = (index: number) => {
+    setMyTeam(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const clearMyTeam = () => {
+    setMyTeam([]);
+  };
+
   return (
     <div className="relative min-h-screen py-8 px-4 sm:px-6">
       <FloatingSprites pokedex={allPokemon} mainRef={mainRef} />
@@ -167,10 +200,36 @@ function App() {
             >
               Sélection manuelle
             </button>
+            <button
+              type="button"
+              onClick={() => handleInputModeChange('league')}
+              className={`
+                flex-1 py-2.5 px-4 text-sm font-bold rounded-xl transition-all duration-300
+                ${inputMode === 'league'
+                  ? 'bg-purple-500 text-white shadow-lg shadow-purple-900/40'
+                  : 'text-slate-400 hover:text-white hover:bg-white/5'}
+              `}
+            >
+              Ligue Pokémon
+            </button>
           </div>
 
           <div className="p-5 sm:p-7 space-y-6">
-            {inputMode === 'pokemon' ? (
+            {inputMode === 'league' ? (
+              <LeagueTool
+                team={leagueTeam}
+                myTeam={myTeam}
+                query={query}
+                setQuery={setQuery}
+                suggestions={suggestions}
+                onAdd={addLeaguePokemon}
+                onRemove={removeLeaguePokemon}
+                onClear={clearLeagueTeam}
+                onAddMyTeam={addMyTeamPokemon}
+                onRemoveMyTeam={removeMyTeamPokemon}
+                onClearMyTeam={clearMyTeam}
+              />
+            ) : inputMode === 'pokemon' ? (
               <div className="space-y-5">
                 <PokemonSearch
                   query={query}
@@ -244,7 +303,7 @@ function App() {
               </div>
             )}
 
-            {currentTypes.length > 0 && (
+            {inputMode !== 'league' && currentTypes.length > 0 && (
               <div className="border-t border-white/10 pt-6 animate-slide-up space-y-4">
                 <div className="flex p-1 bg-slate-800/50 rounded-xl max-w-xs mx-auto">
                   <button
