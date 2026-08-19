@@ -180,7 +180,7 @@ function App() {
             <PokeballLogo />
           </div>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-white mb-2 drop-shadow-lg">
-            Poké-type
+            Pokedex Kanto Reforged
           </h1>
           <p className="text-slate-400 text-sm sm:text-base max-w-md mx-auto">
             Découvre les faiblesses, résistances et immunités de tes Pokémon
