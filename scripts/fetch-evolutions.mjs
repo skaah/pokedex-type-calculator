@@ -35,6 +35,16 @@ function findNode(chain, targetName, parent = null) {
   return null;
 }
 
+function normalizeName(name) {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/œ/g, 'oe')
+    .replace(/æ/g, 'ae')
+    .replace(/[^a-z0-9]/g, '');
+}
+
 async function fetchEvolutions() {
   const pokedexPath = path.join(DATA_DIR, 'pokedex.json');
   const pokedex = JSON.parse(fs.readFileSync(pokedexPath, 'utf-8'));
@@ -43,16 +53,46 @@ async function fetchEvolutions() {
   const ourNames = new Set(pokedex.map(p => p.name));
   console.log(`Our Pokédex contains ${ourNames.size} unique French names`);
 
+  // Manual overrides for names that cannot be resolved by normalization alone
+  // (e.g. gendered forms with identical base name)
+  const MANUAL_OVERRIDES = {
+    'Nidoran♀': { en: 'nidoran-f', id: 29 },
+    'Nidoran♂': { en: 'nidoran-m', id: 32 }
+  };
+
   // Build French name -> { english name, national dex id } by scanning PokeAPI
   const frToData = new Map();
 
+  // Apply manual overrides first
+  for (const [name, data] of Object.entries(MANUAL_OVERRIDES)) {
+    if (ourNames.has(name)) {
+      frToData.set(name, { ...data, apiFrName: name });
+      console.log(`✅ mapped ${name} (manual override / ${data.en}) = ${data.id}`);
+    }
+  }
+
+  // Prepare normalized lookup for remaining names
+  const remainingNames = new Map();
+  for (const name of ourNames) {
+    if (frToData.has(name)) continue;
+    remainingNames.set(normalizeName(name), name);
+  }
+
   for (let id = 1; id <= MAX_NATIONAL_DEX_ID; id++) {
+    // Skip IDs already handled by manual overrides
+    if (Object.values(MANUAL_OVERRIDES).some(o => o.id === id)) continue;
+
     try {
       const species = await fetchWithRetry(`https://pokeapi.co/api/v2/pokemon-species/${id}`);
       const frName = species.names.find(n => n.language.name === 'fr')?.name;
-      if (frName && ourNames.has(frName)) {
-        frToData.set(frName, { en: species.name, id });
-        console.log(`✅ mapped ${frName} (${species.name}) = ${id}`);
+      if (!frName) continue;
+
+      const normalizedFrName = normalizeName(frName);
+      const ourName = remainingNames.get(normalizedFrName);
+
+      if (ourName) {
+        frToData.set(ourName, { en: species.name, id, apiFrName: frName });
+        console.log(`✅ mapped ${ourName} (${frName} / ${species.name}) = ${id}`);
         if (frToData.size === ourNames.size) {
           console.log('All names mapped, stopping scan.');
           break;

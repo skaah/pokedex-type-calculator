@@ -10,11 +10,12 @@ import { Changelog } from './components/Changelog';
 import { PokemonInfoButton } from './components/PokemonInfoButton';
 import { PokemonInfoModal } from './components/PokemonInfoModal';
 import { LeagueTool } from './components/LeagueTool';
+import { Encyclopedia } from './components/Encyclopedia';
 import { usePokemonSearch } from './hooks/usePokemonSearch';
 import { computeMatchups, categorizeMatchups, computeAttackMatchups, categorizeAttackMatchups } from './utils/matchups';
 import type { TypeEn, Pokemon } from './types';
 
-type InputMode = 'pokemon' | 'manual' | 'league';
+type InputMode = 'pokemon' | 'manual' | 'league' | 'encyclopedia';
 type ResultMode = 'defense' | 'attack';
 
 function PokeballLogo() {
@@ -41,6 +42,7 @@ function App() {
   const [infoPokemon, setInfoPokemon] = useState<Pokemon | null>(null);
   const [leagueTeam, setLeagueTeam] = useState<Pokemon[]>([]);
   const [myTeam, setMyTeam] = useState<Pokemon[]>([]);
+  const [encyclopediaTypes, setEncyclopediaTypes] = useState<TypeEn[]>([]);
   const mainRef = useRef<HTMLElement>(null);
 
   const { query, setQuery, suggestions, exactMatch, allPokemon } = usePokemonSearch();
@@ -115,6 +117,28 @@ function App() {
     setSelectedPokemon(null);
     setQuery('');
     setSelectedTypes([]);
+  };
+
+  const handleToggleEncyclopediaType = (type: TypeEn) => {
+    setEncyclopediaTypes(prev => {
+      if (prev.includes(type)) {
+        return prev.filter(t => t !== type);
+      }
+      if (prev.length >= 2) {
+        return [prev[1], type];
+      }
+      return [...prev, type];
+    });
+  };
+
+  const handleSelectFromEncyclopedia = (pokemon: Pokemon) => {
+    setSelectedPokemon(pokemon);
+    setInputMode('pokemon');
+    setQuery('');
+  };
+
+  const handleClearEncyclopediaTypes = () => {
+    setEncyclopediaTypes([]);
   };
 
   const addLeaguePokemon = (pokemon: Pokemon) => {
@@ -212,6 +236,18 @@ function App() {
             >
               Ligue Pokémon
             </button>
+            <button
+              type="button"
+              onClick={() => handleInputModeChange('encyclopedia')}
+              className={`
+                flex-1 py-2.5 px-4 text-sm font-bold rounded-xl transition-all duration-300
+                ${inputMode === 'encyclopedia'
+                  ? 'bg-amber-500 text-white shadow-lg shadow-amber-900/40'
+                  : 'text-slate-400 hover:text-white hover:bg-white/5'}
+              `}
+            >
+              Encyclopédie
+            </button>
           </div>
 
           <div className="p-5 sm:p-7 space-y-6">
@@ -269,6 +305,14 @@ function App() {
                   </EvolutionNav>
                 )}
               </div>
+            ) : inputMode === 'encyclopedia' ? (
+              <Encyclopedia
+                pokedex={allPokemon}
+                selectedTypes={encyclopediaTypes}
+                onToggleType={handleToggleEncyclopediaType}
+                onClearTypes={handleClearEncyclopediaTypes}
+                onSelectPokemon={handleSelectFromEncyclopedia}
+              />
             ) : (
               <div className="space-y-5 animate-slide-up">
                 <TypeGrid selected={selectedTypes} onToggle={handleToggleType} />

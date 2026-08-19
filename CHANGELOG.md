@@ -5,6 +5,26 @@ Toutes les modifications notables de ce projet seront documentées ici.
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/),
 et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.5.1] - 2026-08-19
+
+### Corrigé
+- Régénération complète des données d'évolution (`src/data/evolutions.json`) depuis PokeAPI avec vérification des noms français sur [Poképedia](https://www.pokepedia.fr/).
+- Correction de **Baggiguane** : il évolue désormais correctement en **Baggaïd**.
+- Restauration de **Maganon** comme entité distincte de **Magireve** dans `src/data/pokedex.json` et `src/data/evolutions.json` (Magmar évolue bien en Maganon, Feuforêve évolue en Magireve).
+- Correction des accents et trémas manquants dans `src/data/pokedex.json` : Elekable → Élekable, Etourmi → Étourmi, Etourvol → Étourvol, Etouraptor → Étouraptor, Baggaid → Baggaïd.
+- Ajout d'une normalisation des noms et de overrides pour Nidoran♀/Nidoran♂ dans `scripts/fetch-evolutions.mjs` afin d'éviter les erreurs de mapping dues aux accents, trémas, ligatures et formes genrées.
+- Tous les Pokémon du Pokédex sont désormais mappés et 380 Pokémon possèdent au moins un lien d'évolution.
+
+## [1.5.0] - 2026-08-19
+
+### Ajouté
+- Nouvel onglet **« Encyclopédie »** listant l'ensemble du Pokédex.
+- Affichage de l'encyclopédie sous forme de grille responsive : 1 colonne sur mobile, 2 sur tablette et **3 colonnes** sur desktop.
+- Filtre par type(s) en haut de la liste : réutilisation de la grille de types existante avec sélection de 1 ou 2 types.
+- Logique de filtrage en **ET** : sélectionner « Feu » puis « Vol » n'affiche que les Pokémon possédant ces deux types.
+- Cartes Pokémon cliquables dans l'encyclopédie : redirigent vers l'onglet **Recherche Pokémon** avec le Pokémon pré-sélectionné.
+- Composant `Encyclopedia` et intégration dans `App.tsx` avec un état de filtre dédié.
+
 ## [1.4.0] - 2026-08-16
 
 ### Ajouté

@@ -1,4 +1,16 @@
 {
+  "Nidoran♀": {
+    "previous": [],
+    "next": [
+      "Nidorina"
+    ]
+  },
+  "Nidoran♂": {
+    "previous": [],
+    "next": [
+      "Nidorino"
+    ]
+  },
   "Bulbizarre": {
     "previous": [],
     "next": [
@@ -181,12 +193,6 @@
     ],
     "next": []
   },
-  "Nidoran♀": {
-    "previous": [],
-    "next": [
-      "Nidorina"
-    ]
-  },
   "Nidorina": {
     "previous": [
       "Nidoran♀"
@@ -200,12 +206,6 @@
       "Nidorina"
     ],
     "next": []
-  },
-  "Nidoran♂": {
-    "previous": [],
-    "next": [
-      "Nidorino"
-    ]
   },
   "Nidorino": {
     "previous": [
@@ -286,8 +286,15 @@
       "Mystherbe"
     ],
     "next": [
+      "Rafflésia",
       "Joliflor"
     ]
+  },
+  "Rafflésia": {
+    "previous": [
+      "Ortide"
+    ],
+    "next": []
   },
   "Paras": {
     "previous": [],
@@ -521,7 +528,9 @@
     "previous": [
       "Magnéti"
     ],
-    "next": []
+    "next": [
+      "Magnezone"
+    ]
   },
   "Canarticho": {
     "previous": [],
@@ -637,8 +646,16 @@
     ],
     "next": []
   },
-  "Noadkoko": {
+  "Nœunœuf": {
     "previous": [],
+    "next": [
+      "Noadkoko"
+    ]
+  },
+  "Noadkoko": {
+    "previous": [
+      "Nœunœuf"
+    ],
     "next": []
   },
   "Osselait": {
@@ -773,7 +790,9 @@
     "previous": [
       "Élekid"
     ],
-    "next": []
+    "next": [
+      "Élekable"
+    ]
   },
   "Magmar": {
     "previous": [
@@ -1219,7 +1238,9 @@
   },
   "Feuforêve": {
     "previous": [],
-    "next": []
+    "next": [
+      "Magireve"
+    ]
   },
   "Zarbi": {
     "previous": [],
@@ -1333,7 +1354,9 @@
     "previous": [
       "Marcacrin"
     ],
-    "next": []
+    "next": [
+      "Mammochon"
+    ]
   },
   "Corayon": {
     "previous": [],
@@ -1723,8 +1746,16 @@
     ],
     "next": []
   },
-  "Vigoroth": {
+  "Parécool": {
     "previous": [],
+    "next": [
+      "Vigoroth"
+    ]
+  },
+  "Vigoroth": {
+    "previous": [
+      "Parécool"
+    ],
     "next": [
       "Monaflèmit"
     ]
@@ -2278,6 +2309,26 @@
     "previous": [],
     "next": []
   },
+  "Étourmi": {
+    "previous": [],
+    "next": [
+      "Étourvol"
+    ]
+  },
+  "Étourvol": {
+    "previous": [
+      "Étourmi"
+    ],
+    "next": [
+      "Étouraptor"
+    ]
+  },
+  "Étouraptor": {
+    "previous": [
+      "Étourvol"
+    ],
+    "next": []
+  },
   "Rozbouton": {
     "previous": [],
     "next": [
@@ -2302,6 +2353,12 @@
     ],
     "next": []
   },
+  "Magireve": {
+    "previous": [
+      "Feuforêve"
+    ],
+    "next": []
+  },
   "Corboss": {
     "previous": [
       "Cornèbre"
@@ -2316,10 +2373,22 @@
   },
   "Griknot": {
     "previous": [],
-    "next": []
+    "next": [
+      "Carmache"
+    ]
+  },
+  "Carmache": {
+    "previous": [
+      "Griknot"
+    ],
+    "next": [
+      "Carchacrok"
+    ]
   },
   "Carchacrok": {
-    "previous": [],
+    "previous": [
+      "Carmache"
+    ],
     "next": []
   },
   "Goinfrex": {
@@ -2364,6 +2433,12 @@
     ],
     "next": []
   },
+  "Magnezone": {
+    "previous": [
+      "Magnéton"
+    ],
+    "next": []
+  },
   "Coudlangue": {
     "previous": [
       "Excelangue"
@@ -2379,6 +2454,12 @@
   "Bouldeneu": {
     "previous": [
       "Saquedeneu"
+    ],
+    "next": []
+  },
+  "Élekable": {
+    "previous": [
+      "Élektek"
     ],
     "next": []
   },
@@ -2409,6 +2490,12 @@
   "Scorvol": {
     "previous": [
       "Scorplane"
+    ],
+    "next": []
+  },
+  "Mammochon": {
+    "previous": [
+      "Cochignon"
     ],
     "next": []
   },
@@ -2468,6 +2555,18 @@
     ],
     "next": []
   },
+  "Baggiguane": {
+    "previous": [],
+    "next": [
+      "Baggaïd"
+    ]
+  },
+  "Baggaïd": {
+    "previous": [
+      "Baggiguane"
+    ],
+    "next": []
+  },
   "Anchwatt": {
     "previous": [],
     "next": [
@@ -2490,14 +2589,34 @@
   },
   "Marisson": {
     "previous": [],
-    "next": []
+    "next": [
+      "Boguérisse"
+    ]
+  },
+  "Boguérisse": {
+    "previous": [
+      "Marisson"
+    ],
+    "next": [
+      "Blindépique"
+    ]
   },
   "Blindépique": {
-    "previous": [],
+    "previous": [
+      "Boguérisse"
+    ],
     "next": []
   },
-  "Roussil": {
+  "Feunnec": {
     "previous": [],
+    "next": [
+      "Roussil"
+    ]
+  },
+  "Roussil": {
+    "previous": [
+      "Feunnec"
+    ],
     "next": [
       "Goupelin"
     ]
@@ -2542,73 +2661,17 @@
   },
   "Sovkipou": {
     "previous": [],
+    "next": [
+      "Sarmurai"
+    ]
+  },
+  "Sarmurai": {
+    "previous": [
+      "Sovkipou"
+    ],
     "next": []
   },
   "Mimiqui": {
-    "previous": [],
-    "next": []
-  },
-  "Rafflésia": {
-    "previous": [],
-    "next": []
-  },
-  "Nœunœuf": {
-    "previous": [],
-    "next": []
-  },
-  "Parécool": {
-    "previous": [],
-    "next": []
-  },
-  "Carmarche": {
-    "previous": [],
-    "next": []
-  },
-  "Mamochon": {
-    "previous": [],
-    "next": []
-  },
-  "Elekable": {
-    "previous": [],
-    "next": []
-  },
-  "Magnezone": {
-    "previous": [],
-    "next": []
-  },
-  "Magireve": {
-    "previous": [],
-    "next": []
-  },
-  "Boguérise": {
-    "previous": [],
-    "next": []
-  },
-  "Feunec": {
-    "previous": [],
-    "next": []
-  },
-  "Etourmi": {
-    "previous": [],
-    "next": []
-  },
-  "Etourvol": {
-    "previous": [],
-    "next": []
-  },
-  "Etouraptor": {
-    "previous": [],
-    "next": []
-  },
-  "Bagguiguane": {
-    "previous": [],
-    "next": []
-  },
-  "Baggaid": {
-    "previous": [],
-    "next": []
-  },
-  "Sarmurai": {
     "previous": [],
     "next": []
   }
